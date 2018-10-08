@@ -75,11 +75,12 @@ fi
 
 if [[ ${choice} == 2 ]]; then
     echo ""
-    echo "1.更改UUID"
-    echo "2.更改主端口"
-    echo "3.更改加密方式"
-    echo "4.更改传输方式"
-    echo "5.更改TLS设置"
+    echo "1.更改端口"
+    echo "2.更改UUID"
+    echo "3.更改AlterId"
+    echo "4.更改加密方式"
+    echo "5.更改传输方式"
+    echo "6.更改TLS设置"
     echo ""
     echo "请输入数字选择功能："
 
@@ -97,23 +98,30 @@ if [[ ${choice} == 2 ]]; then
     done
     
     if [[ ${changechoice} == 1 ]]; then
+        python /usr/local/V2Proxy/changeport.py
+        python /usr/local/V2Proxy/genclient.py
+	python /usr/local/V2Proxy/openport.py
+        echo ""
+        echo "端口修改成功！"
+        bash /usr/local/bin/v2ray
+    fi
+    
+    if [[ ${changechoice} == 2 ]]; then
         python /usr/local/V2Proxy/changeuuid.py
         python /usr/local/V2Proxy/genclient.py
         echo ""
         echo "UUID修改成功！"
         bash /usr/local/bin/v2ray
     fi
-    
-    if [[ ${changechoice} == 2 ]]; then
-        python /usr/local/V2Proxy/changeport.py
+    if [[ ${changechoice} == 3 ]]; then
+        python /usr/local/V2Proxy/changealterId.py
         python /usr/local/V2Proxy/genclient.py
-        python /usr/local/V2Proxy/openport.py
         echo ""
-        echo "端口修改成功！"
+        echo "AlterId修改成功！"
         bash /usr/local/bin/v2ray
     fi
     
-    if [[ ${changechoice} == 3 ]]; then
+    if [[ ${changechoice} == 4 ]]; then
         python /usr/local/V2Proxy/changesecurity.py
         python /usr/local/V2Proxy/genclient.py
         echo ""
@@ -121,7 +129,7 @@ if [[ ${choice} == 2 ]]; then
         bash /usr/local/bin/v2ray
     fi
     
-    if [[ ${changechoice} == 4 ]]; then
+    if [[ ${changechoice} == 5 ]]; then
         python /usr/local/V2Proxy/changestream.py
         python /usr/local/V2Proxy/genclient.py
         echo ""
@@ -129,7 +137,7 @@ if [[ ${choice} == 2 ]]; then
         bash /usr/local/bin/v2ray
     fi
     
-    if [[ ${changechoice} == 5 ]]; then
+    if [[ ${changechoice} == 6 ]]; then
         python /usr/local/V2Proxy/changetls.py
         python /usr/local/V2Proxy/genclient.py
         echo ""
@@ -144,7 +152,7 @@ if [[ ${choice} == 3 ]]; then
 fi
 
 if [[ ${choice} == 4 ]]; then
-    echo "请选择文件保存位置（此功能仅限Xshell使用）"
+    echo "请复制该vmess链接"
     python /usr/local/V2Proxy/genclient.py
     sz /root/config.json
     echo "保存成功！"
