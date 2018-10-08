@@ -58,7 +58,7 @@ service v2ray restart
 clear
 echo "V2Ray配置信息:"
 #直接显示v2ray安装后的配置信息
-python3 /usr/local/V2Proxy/serverinfo.py
+python /usr/local/V2Proxy/serverinfo.py
 
 echo "V2Proxy 安装成功！By: 南音"
 echo "输入 v2ray 回车即可使用"
