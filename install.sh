@@ -58,4 +58,4 @@ service v2ray restart
 clear
 
 echo "V2Proxy 安装成功！By: 南音"
-echo "输入 V2Proxy 回车即可使用"
+echo "输入 v2ray 回车即可使用"
