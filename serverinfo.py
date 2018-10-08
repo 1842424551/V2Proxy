@@ -32,7 +32,7 @@ else:
 
 #输出信息
 print("\nIP       ：%s") % str(myip)
-print -e ("\nPort     ：%s") % str(readjson.ConfPort)
+print("Port     ：%s") % str(readjson.ConfPort)
 print("UUID     ：%s") % str(readjson.ConfUUID)
 print("AlterId  ：%s") % str(readjson.ConfAlterId)
 print("Security ：%s") % str(readjson.ConfSecurity)
