@@ -4,6 +4,7 @@
 import readjson
 import urllib2
 import base64
+import json
 #获取本机IP地址
 myip = urllib2.urlopen('http://api.ipify.org').read()
 myip = myip.strip()
