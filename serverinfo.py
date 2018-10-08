@@ -40,7 +40,7 @@ print("Security ：%s") % str(readjson.ConfSecurity)
 print("Network  ：%s") % str(mystreamnetwork)
 print("%s") % str(mystreamsecurity)
 
-for index, sin_user_conf in enumerate(read_json.multiUserConf):
+for index, sin_user_conf in enumerate(readjson.multiUserConf):
     index += 1
     protocol=sin_user_conf["protocol"]
     print("%d." % index)
