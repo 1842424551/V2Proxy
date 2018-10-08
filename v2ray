@@ -154,7 +154,7 @@ fi
 
 if [[ ${choice} == 4 ]]; then
     echo "目前仅支持Bifrostv的vmess链接"
-    python /usr/local/V2Proxy/genclient.py
+    python /usr/local/V2Proxy/serverinfo.py
     bash /usr/local/bin/v2ray
 fi
 if [[ ${choice} == 5 ]]; then
