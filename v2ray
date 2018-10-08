@@ -158,6 +158,6 @@ if [[ ${choice} == 4 ]]; then
     bash /usr/local/bin/v2ray
 fi
 if [[ ${choice} == 5 ]]; then
-    python /usr/local/V2Proxy/uninstall.py
+    python /usr/local/V2Proxy/uninstall.sh
     bash /usr/local/bin/v2ray
 fi
