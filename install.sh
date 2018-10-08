@@ -37,8 +37,7 @@ curl  https://get.acme.sh | sh
 #克隆V2Proxy项目
 cd /usr/local/
 rm -R V2Proxy
-git clone https://github.com/MaruKoh/V2Proxy.git
-cd V2Proxy && git checkout origin/master
+git clone https://github.com/MaruKoh/V2Proxy
 
 #安装V2ray主程序
 bash <(curl -L -s https://install.direct/go.sh)
