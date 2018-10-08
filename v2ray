@@ -4,13 +4,13 @@ export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #Check Root
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
 
-echo -e "\n                    欢迎使用 V2Proxy 管理程序 Author:南音"
+echo -e "\n                  欢迎使用 V2Proxy 管理程序 Author:南音"
 echo ""
 echo -e "\n1.服务管理"
 echo -e "\n2.更改配置"
 echo -e "\n3.查看配置信息"
 echo -e "\n4.生成vmess链接"
-echo "请输入数字选择功能(按回车键退出)："
+echo -e "\n请输入数字选择功能(按回车键退出)："
 
 while :; do echo
 	read -p "请选择： " choice
