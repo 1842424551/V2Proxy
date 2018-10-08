@@ -4,7 +4,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #重装V2Proxy
 rm -rf /usr/local/V2Proxy
 cd /usr/local/
-git clone https://github.com/KiriKira/V2Proxy.git
+git clone https://github.com/MaruKoh/V2Proxy
 cd /usr/local/V2Proxy/
 chmod +x *.py
 
