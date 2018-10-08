@@ -14,17 +14,22 @@ def Write():
     openjsonfile=file("/etc/v2ray/config.json","w+")
     openjsonfile.writelines(myjsondump)
     openjsonfile.close()
-
-#更改UUID
-def WriteUUID(myuuid):
-    config[u"inbound"][u"settings"][u"clients"][0][u"id"]=str(myuuid)
-    Write()
-
+    
 #更改端口
 def WritePort(myport):
     config[u"inbound"][u"port"]=int(myport)
     Write()
-
+    
+#更改UUID
+def WriteUUID(myuuid):
+    config[u"inbound"][u"settings"][u"clients"][0][u"id"]=str(myuuid)
+    Write()
+    
+#更改AlterId
+def WriteAlterId(myalterId):
+    config[u"inbound"][u"settings"][u"clients"][0][u"alterId"]=str(myalterId)
+    Write()
+    
 #更改加密方式
 def WriteSecurity(mysecurity):
     config[u"inbound"][u"settings"][u"clients"][0][u"security"]=str(mysecurity)
