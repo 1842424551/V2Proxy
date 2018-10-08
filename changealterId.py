@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import read_json
-import write_json
+import readjson
+import writejson
 
 #判断是否为数字的函数
 def is_number(s):
