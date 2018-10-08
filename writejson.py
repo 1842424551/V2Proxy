@@ -27,7 +27,7 @@ def WriteUUID(myuuid):
     
 #更改AlterId
 def WriteAlterId(myalterId):
-    config[u"inbound"][u"settings"][u"clients"][0][u"alterId"]=str(myalterId)
+    config[u"inbound"][u"settings"][u"clients"][0][u"alterId"]=int(myalterId)
     Write()
     
 #更改加密方式
