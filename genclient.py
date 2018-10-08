@@ -28,7 +28,7 @@ clientconfig[u"outbound"][u"streamSettings"]=readjson.ConfStream
 if str(readjson.ConfStreamSecurity) == "":
     clientconfig[u"outbound"][u"settings"][u"vnext"][0][u"address"]=str(myip)
 else:
-    domainfile = file("/usr/local/v2ray.fun/mydomain", "r")
+    domainfile = file("/usr/local/V2Proxy/mydomain", "r")
     content = domainfile.read()
     clientconfig[u"outbound"][u"settings"][u"vnext"][0][u"address"] = str(content)
     domainfile.close()
