@@ -26,9 +26,9 @@ elif readjson.ConfStreamNetwork=="ws":
     mystreamnetwork="WebSocket"
 
 if (readjson.ConfStreamSecurity=="tls"):
-    mystreamsecurity="TLS      ：开启"
+    mystreamsecurity="TLS      ：开启\n"
 else:
-    mystreamsecurity="TLS      ：关闭"
+    mystreamsecurity="TLS      ：关闭\n"
 
 #输出信息
 print("\nIP       ：%s") % str(myip)
