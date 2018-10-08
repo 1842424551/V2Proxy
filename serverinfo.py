@@ -38,7 +38,7 @@ print("AlterId  ：%s") % str(readjson.ConfAlterId)
 print("Security ：%s") % str(readjson.ConfSecurity)
 print("Network  ：%s") % str(mystreamnetwork)
 print("%s") % str(mystreamsecurity)
-
+base64_str = base64.b64encode(bytes(json.dumps(copy_conf), 'utf-8'))
 share_url = "vmess://" + bytes.decode(base64_str) 
 #绿色字体显示
 print("\033[32m")
