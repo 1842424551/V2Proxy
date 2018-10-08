@@ -31,7 +31,7 @@ else:
     mystreamsecurity="TLS    ：关闭"
 
 #输出信息
-echo -e " \n"
+
 print("IP       ：%s") % str(myip)
 print("Port     ：%s") % str(readjson.ConfPort)
 print("UUID     ：%s") % str(readjson.ConfUUID)
