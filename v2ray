@@ -158,6 +158,21 @@ if [[ ${choice} == 4 ]]; then
     bash /usr/local/bin/v2ray
 fi
 if [[ ${choice} == 5 ]]; then
-    python /usr/local/V2Proxy/uninstall.sh
-    bash /usr/local/bin/v2ray
+
+#卸载V2ray官方脚本
+systemctl stop v2ray  >/dev/null 2>&1
+systemctl disable v2ray  >/dev/null 2>&1
+service v2ray stop  >/dev/null 2>&1
+update-rc.d -f v2ray remove  >/dev/null 2>&1
+rm -rf  /etc/v2ray/  >/dev/null 2>&1
+rm -rf /usr/bin/v2ray  >/dev/null 2>&1
+rm -rf /var/log/v2ray/  >/dev/null 2>&1
+rm -rf /lib/systemd/system/v2ray.service  >/dev/null 2>&1
+rm -rf /etc/init.d/v2ray  >/dev/null 2>&1
+
+#卸载V2Proxy
+rm -rf /usr/local/V2Proxy >/dev/null 2>&1
+rm -rf /usr/local/bin/v2ray >/dev/null 2>&1
+rm -rf /root/install.sh  >/dev/null 2>&1
+echo "卸载完成！"
 fi
