@@ -31,9 +31,9 @@ else:
     mystreamsecurity="TLS：关闭"
 
 #输出信息
-print("IP            ：%s") % str(myip)
-print("端口        ：%s") % str(readjson.ConfPort)
-print("UUID       ：%s") % str(readjson.ConfUUID)
+print("IP     ：%s") % str(myip)
+print("端口   ：%s") % str(readjson.ConfPort)
+print("UUID   ：%s") % str(readjson.ConfUUID)
 print("额外用户：%s") % str(readjson.ConfAlterld)
 print("加密方式：%s") % str(readjson.ConfSecurity)
 print("传输方式：%s") % str(mystreamnetwork)
