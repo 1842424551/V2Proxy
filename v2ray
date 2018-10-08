@@ -152,10 +152,7 @@ if [[ ${choice} == 3 ]]; then
 fi
 
 if [[ ${choice} == 4 ]]; then
-    echo "请复制该vmess链接"
+    echo "目前仅支持Bifrostv的vmess链接"
     python /usr/local/V2Proxy/genclient.py
-    sz /root/config.json
-    echo "保存成功！"
-    echo ""
     bash /usr/local/bin/v2ray
 fi
