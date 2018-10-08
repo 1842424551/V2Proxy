@@ -26,6 +26,5 @@ print ("请输入新的AlterId：")
 newalterId=raw_input()
 if (is_number(newalterId)):
     writejson.WriteAlterId(newalterId)
-    print("AlterId修改成功！")
 else:
     print ("输入错误，请检查是否为数字")
