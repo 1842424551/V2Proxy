@@ -60,5 +60,5 @@ echo "V2Ray配置信息:"
 #直接显示v2ray安装后的配置信息
 python /usr/local/V2Proxy/serverinfo.py
 
-echo -e "\nV2Proxy v1.0 安装成功！By: 南音"
+echo "V2Proxy v1.0 安装成功！By: 南音"
 echo "输入 v2ray 回车即可使用"
