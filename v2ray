@@ -10,6 +10,7 @@ echo -e "\n1.服务管理"
 echo -e "\n2.更改配置"
 echo -e "\n3.查看配置信息"
 echo -e "\n4.生成vmess链接"
+echo -e "\n5.卸载V2Ray程序"
 echo -e "\n请输入数字选择功能(按回车键退出)："
 
 while :; do echo
@@ -154,5 +155,9 @@ fi
 if [[ ${choice} == 4 ]]; then
     echo "目前仅支持Bifrostv的vmess链接"
     python /usr/local/V2Proxy/genclient.py
+    bash /usr/local/bin/v2ray
+fi
+if [[ ${choice} == 5 ]]; then
+    python /usr/local/V2Proxy/uninstall.sh
     bash /usr/local/bin/v2ray
 fi
