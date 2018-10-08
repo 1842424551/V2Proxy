@@ -24,7 +24,7 @@ def is_number(s):
 print ("当前AlterId为：%s") % str(readjson.ConfAlterId)
 print ("请输入新的AlterId：")
 newalterId=raw_input()
-if (is_number(alterId)):
+if (is_number(newalterId)):
     writejson.WriteAlterId(newalterId)
     print("AlterId修改成功！")
 else:
