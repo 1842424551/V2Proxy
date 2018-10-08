@@ -34,7 +34,7 @@ else:
 print("IP     ：%s") % str(myip)
 print("端口   ：%s") % str(readjson.ConfPort)
 print("UUID   ：%s") % str(readjson.ConfUUID)
-print("额外用户：%s") % str(readjson.ConfAlterld)
+print("额外用户：%s") % str(readjson.ConfAlterId)
 print("加密方式：%s") % str(readjson.ConfSecurity)
 print("传输方式：%s") % str(mystreamnetwork)
 print("%s") % str(mystreamsecurity)
