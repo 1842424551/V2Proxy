@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import read_json
 import write_json
@@ -26,6 +26,6 @@ print ("请输入新的AlterId：")
 newalterId=raw_input()
 if (is_number(alterId)):
     writejson.WriteAlterId(newalterId)
-   print("AlterId修改成功！")
+    print("AlterId修改成功！")
 else:
     print ("输入错误，请检查是否为数字")
